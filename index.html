@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Portifólio  | Front</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Por<span>fólio</span></a></div>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="">Habilidades</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+    <!--Inicio-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Olá, Meu nome é</div>
+                <div class="text-2">Alisson Lins</div>
+                <div class="text-3">eu sou <span>Desenvolvedor</span></div>
+                <a href="https://github.com/AlissonLins" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+     <!--Sobre mim-->
+     <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Sobre mim</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="imagens/me.jpeg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Sou Alisson e sou <span>Desenvolvedor</span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dignissimos perferendis consectetur fugit officiis. 
+                    Temporibus exercitationem nulla vitae minus pariatur. Dolores laborum beatae voluptatem, 
+                    deleniti temporibus odit ea. Quam, necessitatibus dignissimos?
+                    </p>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--Projetos-->
+     <section class="project" id="project">
+        <div class="max-width">
+            <h2 class="title">Projetos</h2>
+            <div class="proje-content">
+                <div class="card"></div>
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
