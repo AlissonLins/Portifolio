@@ -24,7 +24,7 @@
 }
 
 .navbar.sticky {
-    background: #3D3027;
+    background: rgba(0, 0, 0, 0.253);
     padding: 15px 0;
 }
 
@@ -73,7 +73,7 @@
 /* Home inicial*/
 .home {
     display: flex;
-    background-color: #575555; /*imagem principal home*/
+    background-color: #585E61; /*imagem principal home*/
     height: 100vh;
     color: white;
     min-height: 500px;
@@ -128,25 +128,14 @@
     display: none ;
 }
 
-
-/* Sobre mim */
+/* Códigos Símilares */
 section {
     padding: 100px 0;
 }
-.about {
-    font-family: 'Roboto', sans-serif;
-    background-color: #5A5A63;
-}
 
-.about .about-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about .title {
+section .title {
     font-family: 'Ubuntu', sans-serif;
+    color: white;
     text-align: center;
     font-size: 40px;
     font-weight: 500px;
@@ -155,29 +144,45 @@ section {
     position: relative;
 }
 
-.about .title::before {
+section .title::before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 180px;
     height: 3px;
-    background: black;
+    background: white;
     transform: translateX(-50%);
 }
 
-.about .title::after {
-    content: "Quem sou eu";
+section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    background: #5A5A63;
+    background: #8b9091;
     color: #3e322b;
     padding: 5px;
     transform: translateX(-50%);
 }
 
+.about, .project, .skills{
+    font-family: 'Roboto', sans-serif;
+    background-color: #8b9091;
+}
+
+.about .about-content, .project .proje-content, .skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Sobre mim */
+
+.about .title::after {
+    content: "Quem sou eu";
+}
 .about .about-content .left {
     width: 45%;
 }
@@ -190,11 +195,12 @@ section {
     padding: 5px;
     font-size: 25px; 
     font-weight: 500;
+    color: white;
     margin-bottom:10px;
 }
 
 .about .about-content .right .text span {
-    color: #3D3027;
+    color: #3d3027;
 }
 
 .about .about-content .right p {
@@ -226,6 +232,50 @@ section {
     height: 400px;
     object-fit: cover;
     border-radius: 6px;
+}
+
+/* Seção Projetos*/
+.project {
+    background: #616866;
+    color: white;
+}
+
+.project .title::before {
+    background: white;
+}
+
+.project .proje-content .card {
+    height: 210px;
+    width: 250px;
+    background: #222;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3 ease;
+}
+
+
+.project .proje-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.project .proje-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.project .proje-content .card:hover {
+    letter-spacing: 5px;
+}
+
+/* Habilidades*/
+.skills .title::after {
+    content: "Que possuo";
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
 }
 
 /* Responsividade*/
@@ -296,7 +346,12 @@ section {
     .about .about-content .right{
         flex: 100%;
     }
+    .project .proje-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
+
 @media (max-width: 690px){
     .home .home-content .text-2 {
         font-size: 60px;
@@ -304,6 +359,9 @@ section {
     
     .home .home-content .text-3 {
         font-size: 32px;
+    }
+    .project .proje-content .card {
+        width: 100%;
     }
 }
 
