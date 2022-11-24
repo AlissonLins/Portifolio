@@ -173,7 +173,7 @@ section .title::after {
     transform: translateX(-50%);
 }
 
-.about, .project, .skills{
+.about, .project, .skills, .contact{
     font-family: 'Roboto', sans-serif;
     background-color: #8b9091;
 }
@@ -242,13 +242,19 @@ section .title::after {
 }
 
 /* Seção Projetos*/
-.project {
+.project, .contact {
     background: #616866;
     color: white;
 }
 
-.project .title::before {
+.project .title::before,
+.contact .title::before {
     background: white;
+}
+
+.project .title::after,
+.contact .title::After{
+    background: #111;
 }
 
 .project .proje-content .card {
@@ -283,6 +289,104 @@ section .title::after {
 
 .skills .skills-content .column {
     width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: #3e322b;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px; 
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #3D3027;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover{
+    color: #3e322b;
+    background: none;
+}
+
+.skills .skills-content .rigth .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .rigth .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .rigth span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .rigth .line{
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+
+.skills .skills-content .rigth .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #3e322b;
+}
+
+.skills .skills-content .rigth .html::before {
+    width: 73%;
+}
+
+.skills .skills-content .rigth .css::before {
+    width: 73%;
+}
+
+.skills .skills-content .rigth .js::before {
+    width: 50%;
+}
+
+.skills .skills-content .rigth .python::before {
+    width: 83%;
+}
+
+.skills .skills-content .rigth .mysql::before {
+    width: 40%;
+}
+
+/* Contato */
+.contact.title::after{
+    content: "Especializada";
+}
+
+.contact .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 20px 25px;
+}
+
+.contact .carousel .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 /* Responsividade*/
@@ -356,6 +460,10 @@ section .title::after {
     .project .proje-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
 
