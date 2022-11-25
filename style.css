@@ -14,14 +14,17 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 html{
     scroll-behavior: smooth;
 }
-.max-width {
+
+.max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
+
 /* Inicio do navbar */
 .navbar {
     position: fixed;
@@ -131,10 +134,10 @@ html{
 
 /* Menu mobile */
 .menu-btn{
-   color: white;
-   font-size: 26px;
-   cursor: pointer;
-   display: none;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
 }
 .scroll-up-btn{
     position: fixed;
@@ -144,8 +147,8 @@ html{
     bottom: 30px;
     text-align: center;
     line-height: 50px;
-    color: white;
-    background: #3e322b;
+    color: #fff;
+    background: #00804b;
     border-radius: 6px;
     font-size: 30px;
     z-index: 9999;
@@ -154,11 +157,11 @@ html{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-
 .scroll-up-btn.show{
-    opacity: 1;
-    pointer-events: auto;
     bottom: 30px;
+    opacity: 1;
+    pointer-events:auto;
+    
 }
 
 /* Códigos Símilares */
@@ -312,65 +315,55 @@ section .title::after {
 }
 
 /* Habilidades*/
-.skills .title::after {
-    content: "Que possuo";
+.skills .title::after{
+    content: "Que faço";
 }
-
-.skills .skills-content .column {
+.skills .skills-content .column{
     width: calc(50% - 30px);
 }
-
 .skills .skills-content .left .text{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-
-.skills .skills-content .left p {
+.skills .skills-content .left p{
     text-align: justify;
 }
-
-.skills .skills-content .left a {
+.skills .skills-content .left a{
     display: inline-block;
     background: #3e322b;
-    color: white;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
-    padding: 8px 16px; 
+    padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #3D3027;
+    border: 2px solid #3e322b;
     transition: all 0.3s ease;
 }
-
 .skills .skills-content .left a:hover{
     color: #3e322b;
     background: none;
 }
-
-.skills .skills-content .rigth .bars {
+.skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
-
-.skills .skills-content .rigth .info {
+.skills .skills-content .right .info{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.skills .skills-content .rigth span {
+.skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
-
-.skills .skills-content .rigth .line{
+.skills .skills-content .right .line{
     width: 100%;
     height: 5px;
     background: #ccc;
     position: relative;
 }
-
-.skills .skills-content .rigth .line::before{
+.skills .skills-content .right .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -378,126 +371,103 @@ section .title::after {
     left: 0;
     background: #3e322b;
 }
-
-.skills .skills-content .rigth .html::before {
-    width: 73%;
+.skills .skills-content .right .html::before{
+    width: 70%;
 }
-
-.skills .skills-content .rigth .css::before {
-    width: 73%;
+.skills .skills-content .right .css::before{
+    width: 70%;
 }
-
-.skills .skills-content .rigth .js::before {
+.skills .skills-content .right .js::before{
     width: 50%;
 }
-
-.skills .skills-content .rigth .python::before {
-    width: 83%;
+.skills .skills-content .right .python::before{
+    width: 75%;
 }
-
-.skills .skills-content .rigth .mysql::before {
+.skills .skills-content .right .mysql::before{
     width: 40%;
 }
 
 /* Contato */
 .contact .title::after{
-    content: "Fale Conosco";
+    content: "Fale conosco";
     background: #616866;
-
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
-
 .contact .contact-content{
     align-items: flex-start;
 }
-
 .contact .contact-content .left p{
-   text-align: justify; 
+    text-align: justify;
 }
-
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-
-.contact .contact-content .left .icons {
+.contact .contact-content .left .icons{
     margin: 10px 0;
 }
-
 .contact .contact-content .row{
     display: flex;
     height: 65px;
     align-items: center;
 }
-
 .contact .contact-content .row .info{
-    margin-left: 30px;
+    margin-left: 30px
 }
-
 .contact .contact-content .row .info .head{
     font-weight: 500;
 }
-
 .contact .contact-content .row .info .sub-title{
-    color: #3e322b;
+    color: #333;
     text-decoration: none;
-
 }
-
 .contact .contact-content .row ion-icon{
     font-size: 25px;
     color: #3e322b;
 }
-
-.contact .right form .fields{
+.contact .rigth form .fields{
     display: flex;
 }
-.contact .right form .fields,
-.contact .right form .fields .field{
+.contact .rigth form .fields,
+.contact .rigth form .fields .field{
     width: 100%;
     height: 45px;
     margin-bottom: 15px;
 }
-
-.contact .right form .fields input,
-.contact .right form .textarea textarea{
+.contact .rigth form .fields input,
+.contact .rigth form .textarea textarea{
     width: 100%;
     height: 100%;
     border: 1px solid #ccc;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
 }
-
-.contact .right form .name{
+.contact .rigth form .name{
     margin-right: 10px;
 }
-
-.contact .right form .email{
+.contact .rigth form .email{
     margin-left: 10px;
 }
-
-.contact .right form .textarea{
+.contact .rigth form .textarea{
     width: 100%;
     height: 80px;
 }
-
-.contact .right form .textarea textarea{
+.contact .rigth form .textarea textarea{
     padding-top: 10px;
     resize: none;
 }
-
-.contact .right form .button{
+.contact .rigth form .button{
     width: 170px;
-    height: 74px;
+    height: 47px;
+    padding-top: 5px;
 }
-
-.contact .right form .button button{
+.contact .rigth form .button button{
     width: 100%;
     height: 100%;
     border: 2px solid #3e322b;
@@ -509,8 +479,7 @@ section .title::after {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
-.contact .right form .button:hover{
+.contact .rigth form .button button:hover{
     color: #3e322b;
     background: none;
 }
